@@ -1,4 +1,5 @@
 import csv
+import os
 from datetime import date, timedelta
 from functools import wraps
 from pathlib import Path
@@ -371,4 +372,6 @@ def dean_export():
 
 if __name__ == "__main__":
     db.init_db()
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.getenv("PORT", 5000))
+    debug_mode = os.getenv("FLASK_ENV") != "production"
+    app.run(host="0.0.0.0", port=port, debug=debug_mode)
