@@ -1,0 +1,81 @@
+:root {
+  --fras-primary: #2563eb;
+  --fras-dark: #0f172a;
+  --fras-card: #ffffff;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #f1f5f9;
+  color: var(--fras-dark);
+}
+
+.landing-body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 45%, #312e81 100%);
+  min-height: 100vh;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.stat-card {
+  border-radius: 0.75rem;
+  border: none;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+.video-wrap {
+  position: relative;
+  background: #0f172a;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 640px;
+}
+
+.video-wrap video {
+  width: 100%;
+  display: block;
+}
+
+.badge-soft {
+  font-weight: 500;
+}
+
+.table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  border-bottom-width: 1px;
+}
+
+.login-card {
+  max-width: 420px;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+}
+
+.toast-area {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1080;
+}

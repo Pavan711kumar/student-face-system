@@ -1,0 +1,10 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.db
+trained_model/*.yml
+trained_model/*.json
+dataset/*/
+!dataset/.gitkeep
+attendance_records/*.csv
